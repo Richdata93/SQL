@@ -1,0 +1,34 @@
+-- Create a table named "sam_clothing" to store information about clothing items
+CREATE TABLE sam_clothing (
+    -- Unique identifier for each item, auto-incremented
+    item_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    -- Name of the clothing item, should not be NULL
+    item_name TEXT NOT NULL,
+    -- Category or type of the clothing item, should not be NULL
+    category TEXT NOT NULL,
+    -- Size of the clothing item, should not be NULL
+    size TEXT NOT NULL,
+    -- Color of the clothing item, should not be NULL
+    color TEXT NOT NULL,
+    -- Price of the clothing item, should not be NULL
+    price NUMERIC NOT NULL
+);
+
+-- Insert data into the "sam_clothing" table
+INSERT INTO sam_clothing (item_name, category, size, color, price)
+VALUES
+    ('Men\'s Blue Jeans', 'Jeans', '32x32', 'Blue', 49.99),
+    ('Women\'s Red Dress', 'Dresses', 'S', 'Red', 59.99),
+    ('Men\'s Black Leather Jacket', 'Jackets', 'M', 'Black', 89.99),
+    ('Women\'s Running Shoes', 'Shoes', '8', 'White', 39.99),
+    ('Men\'s Plaid Shirt', 'Shirts', 'L', 'Plaid', 29.99),
+    ('Women\'s Denim Shorts', 'Shorts', 'M', 'Denim', 34.99),
+    ('Men\'s Formal Suit', 'Suits', '40R', 'Black', 199.99),
+    ('Women\'s Yoga Pants', 'Pants', 'XS', 'Gray', 24.99),
+    ('Men\'s Polo Shirt', 'Shirts', 'L', 'Navy', 19.99),
+    ('Women\'s Winter Coat', 'Coats', 'M', 'Black', 119.99),
+    ('Men\'s Cargo Shorts', 'Shorts', '34', 'Khaki', 29.99),
+    ('Women\'s Scarf', 'Accessories', 'One Size', 'Purple', 14.99),
+    ('Men\'s Baseball Cap', 'Hats', 'One Size', 'Red', 9.99),
+    ('Women\'s Sunglasses', 'Accessories', 'One Size', 'Black', 19.99),
+    ('Men\'s Leather Belt', 'Accessories', '36', 'Brown', 24.99);
